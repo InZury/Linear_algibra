@@ -57,19 +57,17 @@
 
 위의 선형 시스템에서 상수 부분만 모아서 행렬 형태로 나타낸 것을 **첨가 행렬**이라 한다.
 
-> ```math
->\begin{bmatrix}X\\Y\end{bmatrix}
->```
-
+>```math
 > $\begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} & b_1 \\
-a_{21} & a_{22} & \cdots & a_{2p} & b_2 \\
-\vdots & \vdots & \ddots & \vdots & \vdots \\
-a_{n1} & a_{n2} & \cdots & a_{np} & b_n \end{pmatrix} \, =  \,
-\begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} \\
-a_{21} & a_{22} & \cdots & a_{2p} \\
-\vdots & \vdots & \ddots & \vdots \\
-a_{n1} & a_{n2} & \cdots & a_{np} \end{pmatrix}
-\begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}$
+> a_{21} & a_{22} & \cdots & a_{2p} & b_2 \\
+> \vdots & \vdots & \ddots & \vdots & \vdots \\
+> a_{n1} & a_{n2} & \cdots & a_{np} & b_n \end{pmatrix} \, =  \,
+> \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} \\
+> a_{21} & a_{22} & \cdots & a_{2p} \\
+> \vdots & \vdots & \ddots & \vdots \\
+> a_{n1} & a_{n2} & \cdots & a_{np} \end{pmatrix}
+> \begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}$
+>```
 
 위 식은 행렬 곱이 아니므로 혼동에 주의가 필요하다.
 
