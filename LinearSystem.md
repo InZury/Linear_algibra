@@ -55,7 +55,12 @@
 
 <br>
 
-위의 선형 시스템에서 상수 부분만 모아서 행렬 형태로 나타낸 것을 **첨가 행렬**이라 한다.  
+위의 선형 시스템에서 상수 부분만 모아서 행렬 형태로 나타낸 것을 **첨가 행렬**이라 한다.
+
+```math
+\begin{bmatrix}X\\Y\end{bmatrix}
+```
+
 > $\begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} & b_1 \\
 a_{21} & a_{22} & \cdots & a_{2p} & b_2 \\
 \vdots & \vdots & \ddots & \vdots & \vdots \\
