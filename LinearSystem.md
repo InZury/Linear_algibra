@@ -89,23 +89,20 @@
 > 1 & a & b \\
 >   0 & 1 & c \\
 >   0 & 0 & 1 \\
->   \end{pmatrix}$
-> , &emsp; &emsp;
-> $\begin{pmatrix}  
+>   \end{pmatrix}
+> &emsp; &emsp;
+> \begin{pmatrix}  
 >   1 & a & b & c \\
 >   0 & 1 & d & e \\
 >   0 & 0 & 0 & 0 \\
->   \end{pmatrix}$
-> , &emsp; &emsp;
-> $\begin{pmatrix}
+>   \end{pmatrix}
+> &emsp; &emsp;
+> \begin{pmatrix}
 >   1 & 0 & 0 \\
 >   0 & 1 & 0 \\
 >   0 & 0 & 1 \\
 >   \end{pmatrix}
 >```
-
-> &emsp;&emsp;&emsp;&emsp;&emsp; [가우스 행렬]
-> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; [기약 가우스 행렬]
 
 그리고 다음과 같이 가장 첫 원소가 1인 열에 대하여 1을 제외한 나머지 행 원소가 모두 0인 행렬을  
 **기약 가우스 행렬**이라 하고, 기약 가우스 행렬을 이용하여 선형 시스템의 해를 구하는 방법을  
@@ -131,3 +128,5 @@
 - 무한 개의 해 &emsp;&emsp;&emsp;&emsp;(두 직선이 일치)
 
 동차 선형 시스템의 상수항은 0 이므로 두 개 이상의 직선이 평행하는 경우는 존재하지 않는다.
+
+> $\begin{pmatrix} a & b \end{pmatrix}$
