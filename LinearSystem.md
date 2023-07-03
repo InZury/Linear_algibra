@@ -56,7 +56,7 @@
 <br>
 
 위의 선형 시스템에서 상수 부분만 모아서 행렬 형태로 나타낸 것을 **첨가 행렬**이라 한다.  
-> $ \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} & b_1 \\
+> $\begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} & b_1 \\
                     a_{21} & a_{22} & \cdots & a_{2p} & b_2 \\
                     \vdots & \vdots & \ddots & \vdots & \vdots \\
                     a_{n1} & a_{n2} & \cdots & a_{np} & b_n
@@ -67,8 +67,7 @@
                     \vdots & \vdots & \ddots & \vdots \\
                     a_{n1} & a_{n2} & \cdots & a_{np}
     \end{pmatrix}
-    \begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}
-  $
+    \begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}$
 
 위 식은 행렬 곱이 아니므로 혼동에 주의가 필요하다.
 
@@ -85,24 +84,23 @@
 
 첨가 행렬과 기본 행 연산을 이용하여 선형 시스템의 해를 구할 수 있다.  
 이때, 각 행의 첫 원소가 1이고, 1 아래에 위치하는 원소는 모두 0인 행렬을 **가우스 행렬**이라 한다.
-> $ \begin{pmatrix}
+> $\begin{pmatrix}
     1 & a & b \\
     0 & 1 & c \\
     0 & 0 & 1 \\
-    \end{pmatrix}
-  $, &emsp; &emsp;
-  $ \begin{pmatrix}
+    \end{pmatrix}$
+  , &emsp; &emsp;
+  $\begin{pmatrix}
     1 & a & b & c \\
     0 & 1 & d & e \\
     0 & 0 & 0 & 0 \\
-    \end{pmatrix}
-  $, &emsp; &emsp;
-  $ \begin{pmatrix}
+    \end{pmatrix}$
+  , &emsp; &emsp;
+  $\begin{pmatrix}
     1 & 0 & 0 \\
     0 & 1 & 0 \\
     0 & 0 & 1 \\
-    \end{pmatrix}
-  $
+    \end{pmatrix}$
 
 > &emsp;&emsp;&emsp;&emsp;&emsp; [가우스 행렬]
 > &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; [기약 가우스 행렬]
@@ -119,10 +117,10 @@
 ## **동차 선형 시스템**
 
 선형 시스템의 우변이 모두 0일 때
-> $$ a_{11}x_1 + a_{12}x_2 + \, \cdots \, + a_{1p}x_p = 0 $$  
-> $ a_{21}x_1 + a_{22}x_2 + \, \cdots \, + a_{2p}x_p = 0 $  
-> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $ \vdots $  
-> $ a_{n1}x_1 + a_{n2}x_2 + \, \cdots \, + a_{np}x_p = 0 $
+> $a_{11}x_1 + a_{12}x_2 + \, \cdots \, + a_{1p}x_p = 0$  
+> $a_{21}x_1 + a_{22}x_2 + \, \cdots \, + a_{2p}x_p = 0$  
+> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $\vdots$  
+> $a_{n1}x_1 + a_{n2}x_2 + \, \cdots \, + a_{np}x_p = 0$
 
 해당 선형 시스템을 동차 선형 시스템이라 한다.
 
