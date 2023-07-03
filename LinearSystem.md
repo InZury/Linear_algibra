@@ -57,10 +57,9 @@
 
 위의 선형 시스템에서 상수 부분만 모아서 행렬 형태로 나타낸 것을 **첨가 행렬**이라 한다.  
 > $\begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} & b_1 \\
-                    a_{21} & a_{22} & \cdots & a_{2p} & b_2 \\
-                    \vdots & \vdots & \ddots & \vdots & \vdots \\
-                    a_{n1} & a_{n2} & \cdots & a_{np} & b_n
-    \end{pmatrix}
+a_{21} & a_{22} & \cdots & a_{2p} & b_2 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{np} & b_n \end{pmatrix}
     \, =  \,
     \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} \\
                     a_{21} & a_{22} & \cdots & a_{2p} \\
@@ -85,7 +84,7 @@
 첨가 행렬과 기본 행 연산을 이용하여 선형 시스템의 해를 구할 수 있다.  
 이때, 각 행의 첫 원소가 1이고, 1 아래에 위치하는 원소는 모두 0인 행렬을 **가우스 행렬**이라 한다.
 > $\begin{pmatrix}
-    1 & a & b \\
+1 & a & b \\
     0 & 1 & c \\
     0 & 0 & 1 \\
     \end{pmatrix}$
