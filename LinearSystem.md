@@ -50,7 +50,7 @@
 선형 시스템을 일반화하여 $p$개의 변수로 구성된 $n$개의 방정식을 다음과 같이 나타낼 수 있다.
 > $a_{11}x_1 + a_{12}x_2 + \, \cdots \, + a_{1p}x_p = b_1$  
 > $a_{21}x_1 + a_{22}x_2 + \, \cdots \, + a_{2p}x_p = b_2$  
-> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $\vdots$  
+> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $\vdots$  
 > $a_{n1}x_1 + a_{n2}x_2 + \, \cdots \, + a_{np}x_p = b_n$
 
 <br>
