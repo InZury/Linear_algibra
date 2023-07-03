@@ -34,8 +34,8 @@
 ## **선형 시스템**
 
 두 선형 방정식
-> $ a_1x + b_1y = c_1 $  
-> $ a_2x + b_2y = c_2 $
+> $a_1x + b_1y = c_1$  
+> $a_2x + b_2y = c_2$
 
 이 존재하는 경우, 이러한 선형 방정식의 집합을 연립 1차 방정식이라 하며  
 이를 다른 말로 **선형 시스템** 이라 한다.
@@ -48,10 +48,10 @@
 <br>
 
 선형 시스템을 일반화하여 $p$개의 변수로 구성된 $n$개의 방정식을 다음과 같이 나타낼 수 있다.
-> $ a_{11}x_1 + a_{12}x_2 + \, \cdots \, + a_{1p}x_p = b_1 $  
-> $ a_{21}x_1 + a_{22}x_2 + \, \cdots \, + a_{2p}x_p = b_2 $  
-> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $ \vdots $  
-> $ a_{n1}x_1 + a_{n2}x_2 + \, \cdots \, + a_{np}x_p = b_n $
+> $a_{11}x_1 + a_{12}x_2 + \, \cdots \, + a_{1p}x_p = b_1$  
+> $a_{21}x_1 + a_{22}x_2 + \, \cdots \, + a_{2p}x_p = b_2$  
+> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $\vdots$  
+> $a_{n1}x_1 + a_{n2}x_2 + \, \cdots \, + a_{np}x_p = b_n$
 
 <br>
 
