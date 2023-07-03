@@ -63,3 +63,18 @@ def m_element_mul(M, N):
 def m_mul(M, N):
     # 행렬의 행렬 곱
     
+    col = len(M)
+    row = len(M[0])
+    subRow = len(N[0])
+    result = []
+    
+    for i in range(col):
+        sub = []
+        for j in range(subRow):
+            val = 0
+            for k in range(row):
+                val += M[i][k] * N[k][j]
+            sub.append(val)
+        result.append(sub)
+    
+    return result
