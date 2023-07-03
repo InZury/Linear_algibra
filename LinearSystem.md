@@ -59,14 +59,12 @@
 > $\begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} & b_1 \\
 a_{21} & a_{22} & \cdots & a_{2p} & b_2 \\
 \vdots & \vdots & \ddots & \vdots & \vdots \\
-a_{n1} & a_{n2} & \cdots & a_{np} & b_n \end{pmatrix}
-    \, =  \,
-    \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} \\
-                    a_{21} & a_{22} & \cdots & a_{2p} \\
-                    \vdots & \vdots & \ddots & \vdots \\
-                    a_{n1} & a_{n2} & \cdots & a_{np}
-    \end{pmatrix}
-    \begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}$
+a_{n1} & a_{n2} & \cdots & a_{np} & b_n \end{pmatrix} \, =  \,
+\begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1p} \\
+a_{21} & a_{22} & \cdots & a_{2p} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{np} \end{pmatrix}
+\begin{pmatrix} b_1 \\ b_2 \\ \vdots \\ b_n \end{pmatrix}$
 
 위 식은 행렬 곱이 아니므로 혼동에 주의가 필요하다.
 
@@ -89,7 +87,7 @@ a_{n1} & a_{n2} & \cdots & a_{np} & b_n \end{pmatrix}
     0 & 0 & 1 \\
     \end{pmatrix}$
   , &emsp; &emsp;
-  $\begin{pmatrix}
+  $\begin{pmatrix}  
     1 & a & b & c \\
     0 & 1 & d & e \\
     0 & 0 & 0 & 0 \\
