@@ -14,7 +14,11 @@ NN = np.array([[1, 4], [4, -1], [2, 5]])
 NO = np.array([[3, -3, 5], [-1, 2, -1]])
 
 print("행렬 합:", cal.m_sum(M, N), "\n\n", NM + NN, "\n"`)
+
 print("행렬 차:", cal.m_sub(M, N), "\n\n", NM - NN, "\n")
+
 print("행렬 스칼라 곱:", cal.m_scala_mul(scala, N), "\n\n", scala * NM, "\n")
+
 print("행렬 원소 곱:", cal.m_element_mul(M, N), "\n\n", np.multiply(NM, NN), "\n")
+
 print("행렬 곱:", cal.m_mul(M, O), "\n\n", np.matmul(NM, NO), "\n")

@@ -1,7 +1,19 @@
-from zero_mat import zero_mat
+# 깊은 복사
 
-def deepcopy(arr):
-    # 깊은 복사 구현
+def zero_mat(col, row):
+    # 영 행렬 생성
+    
+    zero = []
+    
+    for i in range(col):
+        sub = []
+        for j in range(row):
+            sub.append(0)
+        zero.append(sub)
+    
+    return zero
+
+def deepcopy(arr): # 깊은 복사 구현
     # mutable 객체 복사에 사용
     
     if type(arr[0]) == list:
