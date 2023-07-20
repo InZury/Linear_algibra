@@ -11,8 +11,8 @@
 <br>
 
 벡터 공간의 공리는 다음과 같다. (단, $V$는 공간, &nbsp; $u$, $v$, $w$는 벡터, &nbsp; $a$, $b$는 스칼라)
-> - $u$, $v$ $\in V$ &nbsp; $\Rightarrow$ &nbsp; $u+v \in V$  
-> - $a$, $u$ $\in V$ &nbsp; $\Rightarrow$ &nbsp; $au \in V$
+> - $u$, $v$ $\in V$ &nbsp; $\rightarrow$ &nbsp; $u+v \in V$  
+> - $a$, $u$ $\in V$ &nbsp; $\rightarrow$ &nbsp; $au \in V$
 > - $u + v = v + u$  
 > - $u + (v + w) = (u + v) + w$  
 > - $u + 0 = 0 + u$  
@@ -44,13 +44,6 @@ $n = 3$인 3차원 공간에 대하여 $u$벡터는 다음과 같이 나타낼 �
 > =& \ ai + bj + ck
 > \end{aligned}
 > ```
-
-> $\begin{aligned}
-> u =& \ (a, b, c) \\
-> =& \ (a, 0, 0) + (0, b, 0) + (0, 0, c) \\
-> =& \ a(1, 0, 0) + b(0, 1, 0) + c(0, 0, 1) \\
-> =& \ ai + bj + ck
-> \end{aligned}$
 
 <br>
 
@@ -133,11 +126,11 @@ $n$차원 공간에서 기저 벡터의 집합 $S$의 크기가 $n$보다 크거
 > \vdots & \vdots & \ddots & \vdots \\
 > a_{n1} & a_{n2} & \cdots & a_{np}
 > \end{pmatrix}
-> \rarr
+> \rightarrow
 > \begin{matrix}
 > (a_{11}, \ a_{12}, \ \cdots, \ a_{1p}) \\
 > (a_{21}, \ a_{22}, \ \cdots, \ a_{2p}) \\
-> \cdots \\
+> \vdots \\
 > (a_{n1}, \ a_{n2}, \ \cdots, \ a_{np})
 > \end{matrix}
 > ```
@@ -155,10 +148,10 @@ $n$차원 공간에서 기저 벡터의 집합 $S$의 크기가 $n$보다 크거
 > a_{11} \\ a_{21} \\ \vdots \\ a_{n1}
 > \end{pmatrix},
 > \begin{pmatrix}
-> a_{12} \\ a_{22} \\ \cdots \\ a_{n2}
+> a_{12} \\ a_{22} \\ \vdots \\ a_{n2}
 > \end{pmatrix},
 > \cdots ,
 > \begin{pmatrix}
-> a_{1p} \\ a_{2p} \\ \cdots \\ a_{np}
+> a_{1p} \\ a_{2p} \\ \vdots \\ a_{np}
 > \end{pmatrix}
 > ```
