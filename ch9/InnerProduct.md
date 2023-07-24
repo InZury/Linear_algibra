@@ -45,9 +45,9 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > ```math
 > u = 
 > \begin{pmatrix}
-> u_{1} \\ u_{2} \\ \cdots \\ u_{n}
+> u_{1} \\ u_{2} \\ \vdots \\ u_{n}
 > \end{pmatrix},
-> v = 
+> \\ \\ v = 
 > \begin{pmatrix}
 > v_{1} \\ v_{2} \\ \vdots \\ v_{n}
 > \end{pmatrix}
@@ -77,8 +77,8 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 
 내적을 이용하면 벡터의 길이를 구할 수 있으며, 벡터의 길이는 **노름**(norm)이라 하며 다음과 같이 표현한다.
 > $u = (u_{1}, u_{2}, \cdots, u_{n})$  
-> $ \Vert u \Vert = \sqrt{u_{1}^{2} + u_{2}^{2} + \cdots + u_{n}^{2}}$
+> $\Vert u \Vert = \sqrt{u_{1}^{2} + u_{2}^{2} + \cdots + u_{n}^{2}}$
 
 내적을 기하학적 관점에서 다음과 같이 정의할 수 있다.
-> $ u \cdot v = \Vert u \Vert \Vert v \Vert cos \theta$  
-> $ cos \theta = \dfrac{u \cdot v}{\Vert u \Vert \Vert v \Vert}$
+> $u \cdot v = \Vert u \Vert \Vert v \Vert cos \theta$  
+> $cos \theta = \dfrac{u \cdot v}{\Vert u \Vert \Vert v \Vert}$
