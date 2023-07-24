@@ -15,9 +15,9 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 
 내적은 다른 연산과 다르게 입력 값과 출력 값의 결과 값이 다를 수 있다.  
 > ```math
-> a + b = c
-> ```  (스칼라의 합)
->
+> a + b = c \ 
+> (스칼라의 합)
+> ```  
 > ```math
 > \begin{pmatrix}
 > x \\ y
@@ -28,4 +28,5 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > \begin{pmatrix}
 > u \\ v
 > \end{pmatrix}
-> ```  (벡터의 합)
+> (벡터의 합)
+> ```
