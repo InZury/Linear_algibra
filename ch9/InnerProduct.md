@@ -45,19 +45,19 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > ```math
 > u = 
 > \begin{pmatrix}
-> u_{1} // u_{2} // \vdots // u_{n}
+> u_{1} \\ u_{2} \\ \vdots \\ u_{n}
 > \end{pmatrix}, \ \
 > v = 
 > \begin{pmatrix}
-> v_{1} // v_{2} // \vdots // v_{n}
+> v_{1} \\ v_{2} \\ \vdots \\ v_{n}
 > \end{pmatrix}, \ \
 > ```
 > ```math
 > \langle u, v \rangle = u^{T}v =
 > (u_{1}, u_{2}, \cdots, u_{n})
 > \begin{pmatrix}
-> v_{1} // v_{2} // \vdots // v_{n}
-> \ end{pmatrix} = 
+> v_{1} \\ v_{2} \\ \vdots \\ v_{n}
+> \end{pmatrix} = 
 > u_{1}v_{1} + u_{2}v_{2} + \cdots + u_{n}v_{n}
 > ```
 이는 대수적 관점에서의 내적을 정의한 것이다.
