@@ -47,7 +47,7 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > \begin{pmatrix}
 > u_{1} \\ u_{2} \\ \vdots \\ u_{n}
 > \end{pmatrix},
-> \\ \\ v = 
+> \ \ v = 
 > \begin{pmatrix}
 > v_{1} \\ v_{2} \\ \vdots \\ v_{n}
 > \end{pmatrix}
