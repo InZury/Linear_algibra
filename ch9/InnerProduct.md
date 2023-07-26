@@ -164,9 +164,9 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > =& c_{i}v_{i}^{T}v_{i} \\
 > =& c_{i}
 > \end{aligned}
-> \\  
-> \therefore a = c_{i}
 > ```
+>  
+> $$\therefore a = c_{i}$$
 
 <br>
 
