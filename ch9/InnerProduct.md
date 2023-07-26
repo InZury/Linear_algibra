@@ -162,8 +162,9 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > =& \langle c_{1}v_{1}, \ v_{i} \rangle + \langle c_{2}v_{2}, \ v_{i} \rangle + \cdots + \langle c_{n}v_{n}, \ v_{i} \rangle \\
 > =& \langle c_{i}v_{i}, \ v_[i] \rangle \\
 > =& c_{i}v_{i}^{T}v_{i} \\
-> = c_{i}
-> \end{aligned} \\
+> =& c_{i}
+> \end{aligned}
+> \\  
 > \therefore a = c_{i}
 > ```
 
@@ -176,9 +177,9 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > ```math
 > w = 
 > \begin{Bmatrix}
-> \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}, \
-> \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}, \
-> \cdots, \
+> \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}, &
+> \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}, &
+> \cdots, &
 > \dfrac{\langle a, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}
 > \end{Bmatrix}
 > ```
