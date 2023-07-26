@@ -102,8 +102,83 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > \langle u, v \rangle
 > =& \Vert u \Vert \Vert v \Vert cos\theta \\
 > =& (\Vert v \Vert) \times (\Vert u \Vert cos\theta) \\
-> =& (length of vector v) \times (length of vector proj_{v}u)
+> =& (length \ of \ vector \ v) \times (length \ of \ vector \ proj_{v}u)
 > \end{aligned}
 > ```
 
 내적의 결과가 음수라면 $proj_{v}u$는 벡터 $v$에 반대 방향임을 알 수 있다.
+
+<br><br>
+
+## **직교 공간과 정규 직교 공간**
+두 직선 또는 두 평면이 직각을 이루며 만나는 것을 **직교**(orthogonal)이라고 한다.  
+벡터 공간에서는 모든 벡터가 서로 직교하면 해당 벡터 공간은 직교한다고 말한다.  
+이때, 벡터의 길이가 1일 때, 이를 **정규 직교**(orthonormal)라고 한다.
+
+<br>
+
+벡터 공간 $S$와 벡터 $u_{1}$, $u_{2}$, $u_{3}$가 다음과 같을 때
+> - $S = \{ {u_{1}, u_{2}, u_{3}} \}$  
+> - 벡터 공간 $S$에 속한 벡터 간 내적값이 모두 0 일 때
+
+벡터 공간 $S$는 직교한다고 말한다.
+
+<br>
+
+직교 공간에 존재하는 직교 벡터의 길이가 모두 1인 경우, 해당 벡터를 **정규 직교 벡터**(orthonormal vector)라고 하며  
+정규 직교 벡터가 만드는 공간을 **정규 직교 공간**(orthonormal space)라고 한다.
+
+<br>
+
+직교 벡터를 정규 직교 벡터로 변환하는 과정을 **정규화**(normalization)라고 하며 다음과 같이 변환한다. 
+> $v = \dfrac{1}{\Vert u \Vert}u$  
+> 
+> $\Vert v \Vert = \Vert \dfrac{1}{\Vert u \Vert}u \Vert = \dfrac{1}{\cancel{\Vert u \Vert}}\cancel{\Vert u \Vert} = 1$
+
+
+<br><br>
+
+## 정규 직교 벡터의 좌표 표현
+벡터 공간 $V$의 **정규 직교 기저**(orthonormal basis)를 $S = \{ v_{1}, v_{2}, \cdots, v_{n} \}$라고 할 때  
+벡터 공간 $V$에 속하는 임의의 벡터 $u$는 다음과 같이 표현한다.
+> $u = \langle a, v_{1} \rangle v_{1} + \langle a, v_{2} \rangle v_{2} + \cdots + \langle a, v_{n} \rangle v_{n}$
+
+여기서 $\langle a, v_{i} \rangle$를 $c_{i}$라 할 때 벡터 $u$는 다음과 같이 나타낼 수도 있다.
+> ```math
+> \begin{aligned}
+> u =& \langle a, v_{1} \rangle v_{1} + \langle a, v_{2} \rangle v_{2} + \cdots + \langle a, v_{n} \rangle v_{n} \\
+> =& c_{1}v_{1} + c_{2}v_{2} + \cdots + c_{n}v_{n} \\
+> =& (c_{1}, c_{2}, \cdots, c_{n})
+> \end{aligned}
+> ```
+
+<br>
+
+벡터 $u$와 기저 벡터 $v_{i}$를 내적하면 다음과 같다.
+> ```math
+> \begin{aligned}
+> \langle a, v_{i} \rangle
+> =& \langle c_{1}v_{1} + c_{2}v_{2} + \cdots + c_{n}v_{n}, \ v_{i} \rangle \\
+> =& \langle c_{1}v_{1}, \ v_{i} \rangle + \langle c_{2}v_{2}, \ v_{i} \rangle + \cdots + \langle c_{n}v_{n}, \ v_{i} \rangle \\
+> =& \langle c_{i}v_{i}, \ v_[i] \rangle \\
+> =& c_{i}v_{i}^{T}v_{i} \\
+> = c_{i}
+> \end{aligned} \\
+> \therefore a = c_{i}
+> ```
+
+<br>
+
+벡터 공간 $V$에 **직교 기저**(orthogonal basis)를 $U = \{ u_{1}, u_{2}, \cdots, u_{n} \}$라 라 할 때, 임의의 벡터 $w$는 다음과 같이 표현할 수 있다.
+> $w = \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} + \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2} + \cdots + \dfrac{\langle a, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}u_{n}$
+
+이때 벡터 $u$의 좌표는 다음과 같이 나타낸다.
+> ```math
+> w = 
+> \begin{Bmatrix}
+> \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}, \
+> \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}, \
+> \cdots, \
+> \dfrac{\langle a, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}
+> \end{Bmatrix}
+> ```
