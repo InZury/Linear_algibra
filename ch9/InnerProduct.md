@@ -100,8 +100,8 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > ```math
 > \begin{aligned}
 > \langle u, v \rangle
-> =& \Vert u \Vert \Vert v \Vert cos\theta  
-> =& (\Vert v \Vert) \times (\Vert u \Vert cos\theta)  
+> =& \Vert u \Vert \Vert v \Vert cos\theta \\
+> =& (\Vert v \Vert) \times (\Vert u \Vert cos\theta) \\
 > =& (length of vector v) \times (length of vector proj_{v}u)
 > \end{aligned}
 > ```
