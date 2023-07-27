@@ -276,16 +276,15 @@ $U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$으로
 행렬 $M$의 열 벡터는 다음과 같이 표현할 수 있다.
 > - 열 벡터의 표현식 (1)
 > ```math
-> m_{1} = \langle m_{1}, v_{1} \rangle v_{1} + \langle m_{1}, v_{2} \rangle v_{2} + \cdots + \langle m_{1}, v_{n} \rangle v_{n} \\
-> m_{2} = \langle m_{2}, v_{1} \rangle v_{1} + \langle m_{2}, v_{2} \rangle v_{2} + \cdots + \langle m_{2}, v_{n} \rangle v_{n} \\
-> \vdots \\
-> m_{n} = \langle m_{n}, v_{1} \rangle v_{1} + \langle m_{n}, v_{2} \rangle v_{2} + \cdots + \langle m_{n}, v_{n} \rangle v_{n}  
+> m_{1} = \langle m_{1}, v_{1} \rangle v_{1} + \langle m_{1}, v_{2} \rangle v_{2} + \cdots + \langle m_{1}, v_{n} \rangle v_{n} \\  
+> m_{2} = \langle m_{2}, v_{1} \rangle v_{1} + \langle m_{2}, v_{2} \rangle v_{2} + \cdots + \langle m_{2}, v_{n} \rangle v_{n} \\  
+> \vdots \\  
+> m_{n} = \langle m_{n}, v_{1} \rangle v_{1} + \langle m_{n}, v_{2} \rangle v_{2} + \cdots + \langle m_{n}, v_{n} \rangle v_{n}
 > ```
 > - 열 벡터의 표현식 (2)
 > ```math
 > \begin{pmatrix} m_{1} & m_{2} & \cdots & m_{n} \end{pmatrix} = 
-> \begin{pmatrix} v_{1} & v_{2} & \cdots & v_{n} \end{pmatrix}
-> \begin{pmatrix}
+> \begin{pmatrix} v_{1} & v_{2} & \cdots & v_{n} \end{pmatrix} \begin{pmatrix}
 > \langle a_{1}v_{1} \rangle & \langle a_{2}v_{1} \rangle & \cdots & \langle a_{n}v_{1} \rangle \\
 > \langle a_{1}v_{v} \rangle & \langle a_{2}v_{v} \rangle & \cdots & \langle a_{n}v_{2} \rangle \\
 > \vdots & \vdots & \ddots & \vdots \\
