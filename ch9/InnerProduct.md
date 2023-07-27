@@ -202,7 +202,7 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > \begin{aligned}
 > u =& w_{1} + w_{2} \\
 > \Leftrightarrow& w_{2} = u - w_{1} \\
-> \Leftrightarrow& u = Proj_{w}u + Proj_{w\prep}u \\
+> \Leftrightarrow& u = Proj_{w}u + Proj_{w\perp}u \\
 > \Leftrightarrow& Proj_{w\perp}u = u - Proj_{w}u \\
 > \Leftrightarrow& u= Proj_{w}u + (u - Proj_{w}u)
 > \end{aligned}
@@ -212,6 +212,7 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 
 정사영 개념에 직교 개념이 합쳐진 것을 직교 정사영이라 한다.  
 벡터 공간 $S$의 부분 공간을 $W$라 할 때, 부분 공간 $W$의 직교 기저가 $\{ u_{1}, u_{2}, \cdots, u_{n} \}$이고 $t$가 벡터 공간 $S$의 임의의 벡터이면 $Proj_{w}t$는 다음과 같다.
-> $Proj_{w}t = \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} + 
-> \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2} + \cdots + 
-> \dfrac{\langle a, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}u_{n}$
+> ```math 
+> Proj_{w}t = \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} +
+> \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2} + \cdots +
+> \dfrac{\langle a, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}u_{n}
