@@ -118,7 +118,7 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 <br>
 
 벡터 공간 $S$와 벡터 $u_{1}$, $u_{2}$, $u_{3}$가 다음과 같을 때
-> - $S = \{ {u_{1}, u_{2}, u_{3}} \}$  
+> - $S = \lbrace {u_{1}, u_{2}, u_{3}} \rbrace$  
 > - 벡터 공간 $S$에 속한 벡터 간 내적값이 모두 0 일 때
 
 벡터 공간 $S$는 직교한다고 말한다.
@@ -139,7 +139,7 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 <br><br>
 
 ## 정규 직교 벡터의 좌표 표현
-벡터 공간 $V$의 **정규 직교 기저**(orthonormal basis)를 $S = \{ v_{1}, v_{2}, \cdots, v_{n} \}$라고 할 때  
+벡터 공간 $V$의 **정규 직교 기저**(orthonormal basis)를 $S = \lbrace v_{1}, v_{2}, \cdots, v_{n} \rbrace$라고 할 때  
 벡터 공간 $V$에 속하는 임의의 벡터 $u$는 다음과 같이 표현한다.
 > $u = \langle a, v_{1} \rangle v_{1} + \langle a, v_{2} \rangle v_{2} + \cdots + \langle a, v_{n} \rangle v_{n}$
 
@@ -170,7 +170,7 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 
 <br>
 
-벡터 공간 $V$에 **직교 기저**(orthogonal basis)를 $U = \{ u_{1}, u_{2}, \cdots, u_{n} \}$라 라 할 때, 임의의 벡터 $w$는 다음과 같이 표현할 수 있다.
+벡터 공간 $V$에 **직교 기저**(orthogonal basis)를 $U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$라 라 할 때, 임의의 벡터 $w$는 다음과 같이 표현할 수 있다.
 > $w = \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} + \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2} + \cdots + \dfrac{\langle a, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}u_{n}$
 
 이때 벡터 $u$의 좌표는 다음과 같이 나타낸다.
@@ -184,6 +184,8 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > \end{Bmatrix}
 > ```
 
+<br><br>
+
 ## **그램 슈미트 과정**
 정사영의 개념을 활용하는 정리는 다음과 같다.
 > **정사영 정리**(projection theorem)  
@@ -192,8 +194,8 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > 이때, $w_{1}$은 부분 공간 $W$에 속하는 벡터이며, $w_{2}$는 부분 공간의 직교 공간인 $W^{-1}$에 속하는 벡터이다.  
 > ```math
 > \begin{aligned}
-> w_{1} =& Proj_{w}u \\
-> w_{2} =& Proj_{w\perp}u
+> w_{1} =& Proj_{_{W}}u \\
+> w_{2} =& Proj_{_{W\perp}}u
 > \end{aligned}
 > ```
 
@@ -202,17 +204,31 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 > \begin{aligned}
 > u =& w_{1} + w_{2} \\
 > \Leftrightarrow& w_{2} = u - w_{1} \\
-> \Leftrightarrow& u = Proj_{w}u + Proj_{w\perp}u \\
-> \Leftrightarrow& Proj_{w\perp}u = u - Proj_{w}u \\
-> \Leftrightarrow& u= Proj_{w}u + (u - Proj_{w}u)
+> \Leftrightarrow& u = Proj_{_{W}}u + Proj_{_{W\perp}}u \\
+> \Leftrightarrow& Proj_{_{W\perp}}u = u - Proj_{_{W}}u \\
+> \Leftrightarrow& u= Proj_{_{W}}u + (u - Proj_{_{W}}u)
 > \end{aligned}
 > ```
 
 <br>
 
 정사영 개념에 직교 개념이 합쳐진 것을 직교 정사영이라 한다.  
-벡터 공간 $S$의 부분 공간을 $W$라 할 때, 부분 공간 $W$의 직교 기저가 $\{ u_{1}, u_{2}, \cdots, u_{n} \}$이고 $t$가 벡터 공간 $S$의 임의의 벡터이면 $Proj_{w}t$는 다음과 같다.
+벡터 공간 $S$의 부분 공간을 $W$라 할 때, 부분 공간 $W$의 직교 기저가 $\lbrace u_{1}, u_{2}, \cdots, u_{n}\rbrace$이고 $t$가 벡터 공간 $S$의 임의의 벡터이면 $Proj_{_{W}}t$는 다음과 같다.
 > ```math 
-> Proj_{w}t = \dfrac{\langle a, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} +
-> \dfrac{\langle a, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2} + \cdots +
-> \dfrac{\langle a, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}u_{n}
+> Proj_{W}t = \dfrac{\langle t, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} +
+> \dfrac{\langle t, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2} + \cdots +
+> \dfrac{\langle t, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}u_{n}
+> ```
+
+따라서 $Proj_{_{W}}t$의 좌표는 다음과 같다.
+> ```math 
+> \left\{
+> \dfrac{\langle t, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}, \
+> \dfrac{\langle t, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}, \ \cdots, \
+> \dfrac{\langle t, u_{n} \rangle}{\Vert u_{n} \Vert^{2}}
+> \right\}
+> ```
+
+<br>
+
+벡터 공간 $S$에 부분 공간 $W$의 정규 직교 기저가 $\lbrace v_{1}, v_{2}, \cdots, v_{n} \rbrace$일 때
