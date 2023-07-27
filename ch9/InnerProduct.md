@@ -277,11 +277,8 @@ $U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$으로
 > - 열 벡터의 표현식 (1)
 > ```math
 > m_{1} = \langle m_{1}, v_{1} \rangle v_{1} + \langle m_{1}, v_{2} \rangle v_{2} + \cdots + \langle m_{1}, v_{n} \rangle v_{n} \\ 
->   
 > m_{2} = \langle m_{2}, v_{1} \rangle v_{1} + \langle m_{2}, v_{2} \rangle v_{2} + \cdots + \langle m_{2}, v_{n} \rangle v_{n} \\
->   
 > \vdots \\
->   
 > m_{n} = \langle m_{n}, v_{1} \rangle v_{1} + \langle m_{n}, v_{2} \rangle v_{2} + \cdots + \langle m_{n}, v_{n} \rangle v_{n}
 > ```
 > - 열 벡터의 표현식 (2)
