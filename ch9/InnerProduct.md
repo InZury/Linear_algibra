@@ -231,4 +231,85 @@ $\langle u, v\rangle$는 벡터 $u$와 $v$의 내적을 의미한다.
 
 <br>
 
-벡터 공간 $S$에 부분 공간 $W$의 정규 직교 기저가 $\lbrace v_{1}, v_{2}, \cdots, v_{n} \rbrace$일 때
+벡터 공간 $S$에 부분 공간 $W$의 정규 직교 기저가 $\lbrace v_{1}, v_{2}, \cdots, v_{n} \rbrace$일 때  
+$r$이 벡터 공간 $S$의 임의의 벡터이면 $Proj_{_{W}}r$은 다음과 같다.
+> ```math
+> Proj_{_{W}}r = \langle a, v_{1} \rangle v_{1} +
+> \langle a, v_{2} \rangle v_{2} + \cdots +
+> \langle a, v_{n} \rangle v_{n}
+> ```
+
+<br>
+
+기저 벡터 집합 $S = \lbrace s_{1}, s_{2}, \cdots, s_{n} \rbrace$을 직교 기저 벡터 집합
+$U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$으로  
+변환하는 과정을 **그램 슈미트 과정**(Gram-Schmidt Process)라고 한다.  
+그램 슈미트 과정은 다음과 같다.
+> step 1
+> - $u_{1} = s_{1}$
+>
+> step 2
+> - $u_{2} = s_{2} - \dfrac{\langle s_{2}, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1}$  
+> $\because s_{2} = u_{2} + Proj_{_{U_{1}}}s_{2}$
+>
+> step 3
+> - $u_{3} = s_{3} - \dfrac{\langle s_{3}, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} - \dfrac{\langle s_{3}, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2}$  
+> $\because s_{3} = u_{2} + Proj_{_{U_{2}}}s_{3}$
+>
+> $$\vdots$$
+> step $n$
+> - $u_{n} = s_{n} - \dfrac{\langle s_{n}, u_{1} \rangle}{\Vert u_{1} \Vert^{2}}u_{1} - \dfrac{\langle s_{n}, u_{2} \rangle}{\Vert u_{2} \Vert^{2}}u_{2} - \cdots - \dfrac{\langle s_{n}, u_{n-1} \rangle}{\Vert u_{n-1} \Vert^{2}}u_{n-1}$
+
+그램 슈미트 과정은 기저를 직교 기저로 바꾸기 때문에 모든 벡터가 서로 직교하게 만들어야 한다.
+
+<br>
+
+행렬 $M$이 $n \times p$행렬이고 풀 랭크 일 때, 행렬 $M$의 열 벡터는 모두 선형 독립이다.  
+따라서 행렬 $M$의 열 벡터는 공간의 기저가 될 수 있다. 이때, 행렬 $M$을 다음과 같이 분해할 수 있다.
+> $M = QR$
+
+이때 $Q$는 $n \times p$행렬이고 정규 직교 벡터로 구성되어 있으며, $R$은 가역 상 삼각행렬이다.  
+**가역 상 삼각 행렬**(invertible upper triangular matrix)은 역행렬이 존재하는 상 삼각 행렬을 말한다.
+
+<br>
+
+행렬 $M$의 열 벡터는 다음과 같이 표현할 수 있다.
+> - 열 벡터의 표현식 (1)
+> ```math
+> m_{1} = \langle m_{1}, v_{1} \rangle v_{1} + \langle m_{1}, v_{2} \rangle v_{2} + \cdots + \langle m_{1}, v_{n} \rangle v_{n} \\
+> m_{2} = \langle m_{2}, v_{1} \rangle v_{1} + \langle m_{2}, v_{2} \rangle v_{2} + \cdots + \langle m_{2}, v_{n} \rangle v_{n} \\
+> \vdots \\
+> m_{n} = \langle m_{n}, v_{1} \rangle v_{1} + \langle m_{n}, v_{2} \rangle v_{2} + \cdots + \langle m_{n}, v_{n} \rangle v_{n}  
+> ```
+> - 열 벡터의 표현식 (2)
+> ```math
+> \begin{pmatrix} m_{1} & m_{2} & \cdots & m_{n} \end{pmatrix} = 
+> \begin{pmatrix} v_{1} & v_{2} & \cdots & v_{n} \end{pmatrix}
+> \begin{pmatrix}
+> \langle a_{1}v_{1} \rangle & \langle a_{2}v_{1} \rangle & \cdots & \langle a_{n}v_{1} \rangle \\
+> \langle a_{1}v_{v} \rangle & \langle a_{2}v_{v} \rangle & \cdots & \langle a_{n}v_{2} \rangle \\
+> \vdots & \vdots & \ddots & \vdots \\
+> \langle a_{1}v_{n} \rangle & \langle a_{2}v_{n} \rangle & \cdots & \langle a_{n}v_{n} \rangle
+> \end{pmatrix}
+> ```
+
+위 표현식을 통해 다음과 같이 나타낼 수 있다.
+> $$ A = QR $$
+> ```math
+> \begin{pmatrix} v_{1} & v_{2} & \cdots & v_{n} \end{pmatrix}
+> ```
+> ```math
+> R = 
+> \begin{pmatrix}
+> \langle a_{1}v_{1} \rangle & \langle a_{2}v_{1} \rangle & \cdots & \langle a_{n}v_{1} \rangle \\
+> \langle a_{1}v_{v} \rangle & \langle a_{2}v_{v} \rangle & \cdots & \langle a_{n}v_{2} \rangle \\
+> \vdots & \vdots & \ddots & \vdots \\
+> \langle a_{1}v_{n} \rangle & \langle a_{2}v_{n} \rangle & \cdots & \langle a_{n}v_{n} \rangle
+> \end{pmatrix}
+> ```
+
+이처럼 행렬 $M$을 행렬 $Q$와 행렬 $R$로 분해하는 것을 $QR$분해라고 한다.
+
+<br>
+
+하우스홀더 행렬을 이용하여 $QR$분해할 수도 있다.
