@@ -275,12 +275,10 @@ $U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$으로
 
 행렬 $M$의 열 벡터는 다음과 같이 표현할 수 있다.
 > - 열 벡터의 표현식 (1)
-> ```math
-> m_{1} = \langle m_{1}, v_{1} \rangle v_{1} + \langle m_{1}, v_{2} \rangle v_{2} + \cdots + \langle m_{1}, v_{n} \rangle v_{n} \\ 
-> m_{2} = \langle m_{2}, v_{1} \rangle v_{1} + \langle m_{2}, v_{2} \rangle v_{2} + \cdots + \langle m_{2}, v_{n} \rangle v_{n} \\
-> \vdots \\
-> m_{n} = \langle m_{n}, v_{1} \rangle v_{1} + \langle m_{n}, v_{2} \rangle v_{2} + \cdots + \langle m_{n}, v_{n} \rangle v_{n}
-> ```
+> $$m_{1} = \langle m_{1}, v_{1} \rangle v_{1} + \langle m_{1}, v_{2} \rangle v_{2} + \cdots + \langle m_{1}, v_{n} \rangle v_{n}$$
+> $$m_{2} = \langle m_{2}, v_{1} \rangle v_{1} + \langle m_{2}, v_{2} \rangle v_{2} + \cdots + \langle m_{2}, v_{n} \rangle v_{n}$$
+> $$\vdots$$
+> $$m_{n} = \langle m_{n}, v_{1} \rangle v_{1} + \langle m_{n}, v_{2} \rangle v_{2} + \cdots + \langle m_{n}, v_{n} \rangle v_{n}$$
 > - 열 벡터의 표현식 (2)
 > ```math
 > \begin{pmatrix} m_{1} & m_{2} & \cdots & m_{n} \end{pmatrix} = 
@@ -293,7 +291,7 @@ $U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$으로
 > ```
 
 위 표현식을 통해 다음과 같이 나타낼 수 있다.
-> $$ A = QR $$
+> $$ M = QR $$
 > ```math
 > \begin{pmatrix} v_{1} & v_{2} & \cdots & v_{n} \end{pmatrix}
 > ```
@@ -311,4 +309,11 @@ $U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$으로
 
 <br>
 
-하우스홀더 행렬을 이용하여 $QR$분해할 수도 있다.
+하우스홀더 행렬을 이용하여 $QR$분해할 수도 있다.  
+결론적으로 말하면 다음과 같다.
+> $$M = QR$$
+> $$Q = H_{1}H_{2}H_{3}$$  
+> $$R = H_{3}H_{2}H_{1}M$$
+
+하우스홀더 행렬에 대한 이해는 다음 페이지를 통하여 설명한다.
+> [Householder QR 분해] (https://github.com/InZury/Linear_algibra/blob/main/ch9/Householder_QR.md)
