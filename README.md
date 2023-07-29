@@ -12,21 +12,21 @@
 ### **Contents**
 ---
 
-&nbsp; - ch2 &nbsp; 파이썬 기초  
+&nbsp; - ch2 &nbsp; 파이썬 기초
 
 &nbsp; - ch3 &nbsp; 행렬  
 
 &nbsp; - ch4 &nbsp; 다양한 행렬  
 
-&nbsp; - ch5 &nbsp; 선형 시스템  
+&nbsp; - [ch5 &nbsp; 선형 시스템](https://github.com/InZury/Linear_algibra/blob/main/ch5/LinearSystem.md)
 
-&nbsp; - ch6 &nbsp; 행렬식  
+&nbsp; - [ch6 &nbsp; 행렬식](https://github.com/InZury/Linear_algibra/blob/main/ch6/determinant.md)
 
-&nbsp; - ch7 &nbsp; 역행렬  
+&nbsp; - [ch7 &nbsp; 역행렬](https://github.com/InZury/Linear_algibra/blob/main/ch7/InverseMatrix.md)
 
-&nbsp; - ch8 &nbsp; 기저와 차원  
+&nbsp; - [ch8 &nbsp; 기저와 차원](https://github.com/InZury/Linear_algibra/blob/main/ch8/Basis%26Dimension.md)
 
-&nbsp; - ch9 &nbsp; 내적  
+&nbsp; - [ch9 &nbsp; 내적](https://github.com/InZury/Linear_algibra/blob/main/ch9/InnerProduct.md)
 
 &nbsp; - ch10 다양한 곱 연산  
 
