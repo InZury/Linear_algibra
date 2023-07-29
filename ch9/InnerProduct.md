@@ -316,4 +316,6 @@ $U = \lbrace u_{1}, u_{2}, \cdots, u_{n} \rbrace$으로
 > $$R = H_{3}H_{2}H_{1}M$$
 
 하우스홀더 행렬에 대한 이해는 다음 페이지를 통하여 설명한다.
-> [Householder QR 분해] (https://github.com/InZury/Linear_algibra/blob/main/ch9/Householder_QR.md)
+> Householder QR 분해
+
+[Householder QR 분해] (https://github.com/InZury/Linear_algibra/blob/main/ch9/Householder_QR.md)
