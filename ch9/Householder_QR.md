@@ -27,7 +27,7 @@
 > \begin{pmatrix}
 > x_{1} \\ y_{1} \\ z_{1} \\ w_{1}
 > \end{pmatrix},
-> \qaud \quad
+> \quad \quad
 > e_{1} = 
 > \begin{pmatrix}
 > 1 \\ 0 \\ 0 \\ 0
@@ -47,15 +47,15 @@
 > ```math
 > M_{2} \Rightarrow
 > \begin{pmatrix}
-> x_{4} & x_{5} & x_{6} //
-> y_{4} & y_{5} & y_{6} //
-> z_{4} & z_{5} & z_{6} //
+> x_{4} & x_{5} & x_{6} \\
+> y_{4} & y_{5} & y_{6} \\
+> z_{4} & z_{5} & z_{6} \\
 > w_{4} & w_{5} & w_{6}
 > \end{pmatrix}
 > \Rightarrow
 > \begin{pmatrix}
-> y_{5} & y_{6} //
-> z_{5} & z_{6} //
+> y_{5} & y_{6} \\
+> z_{5} & z_{6} \\
 > w_{5} & w_{6}
 > \end{pmatrix}
 > ```
@@ -70,7 +70,7 @@
 > ```math
 > \begin{pmatrix}
 > x & y \\ z & w
-> \end{pmtrix}
+> \end{pmatrix}
 > \Rightarrow
 > \begin{pmatrix}
 > 1 & 0 & 0 & 0 \\
